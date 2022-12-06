@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+    <style type="text/css">
+        table,tr,td{border: 1px solid silver;}
+    </style>
+</head>
+<body>
+    <!-- 
+        1.表格结构 
+        table
+        tr:table row表格行
+        td：table data cell单元格
+
+        2.完整结构
+        caption：表格标题（一个表格只有一个标题，默认在第一行）
+        th：table header cell表头单元格
+
+        3.语义化（表头，表身，表脚）
+        thread
+        tbody
+        tfoot
+
+        4.合并行：rowspan,纵向row
+
+        5.合并列：colspan,横向column
+
+
+
+     -->
+
+     <p>
+        <br>
+        <br> 1.表格结构 
+        <br>table
+        <br>tr:table row表格行
+        <br>td：table data cell单元格
+        <br>
+        <br>2.完整结构
+        <br>caption：表格标题（一个表格只有一个标题，默认在第一行）
+        <br>th：table header cell表头单元格
+        <br>
+        <br>3.语义化（表头，表身，表脚）
+        <br>thread
+        <br>tbody
+        <br>tfoot
+        <br>
+        <br>4.合并行：rowspan,纵向row
+        <br>
+        <br>5.合并列：colspan,横向column
+
+     </p>
+
+    <table>
+        <caption>学生成绩表</caption>
+        <thead>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>成绩</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>张三</th>
+                <td>男</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <th>里斯</th>
+                <td>男</td>
+                <td>520</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th>平均分</th>
+                <td colspan="2">385</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+    
+</body>
+</html>
